@@ -1,12 +1,80 @@
-# React + Vite
+README - Calculadora React com Temas
+Calculadora React
+Este é um projeto de uma calculadora web desenvolvida utilizando a biblioteca React. A calculadora oferece funcionalidades aritméticas básicas, histórico de cálculos e um sistema de temas claro e escuro para personalização da interface.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Funcionalidades
+Operações Básicas: Realize adições, subtrações, multiplicações e divisões.
+Entrada Decimal: Insira números com casas decimais.
+Histórico: Acompanhe as operações realizadas.
+Funções Extras:
+Porcentagem (%)
+Troca de Sinal (+/-)
+Limpar Tudo (AC)
+Memória (MC, MR, M+, M- - funcionalidade lógica implementada)
+Copiar (Copy) - Copia o valor do display para a área de transferência.
+Raiz Quadrada (√)
+Quadrado (x²)
+Temas: Alterne entre os modos claro e escuro para uma experiência visual confortável em diferentes ambientes. O botão de troca de tema está localizado no canto superior direito da tela.
+Tecnologias Utilizadas
+React: Biblioteca JavaScript para construção de interfaces de usuário.
+CSS: Para a estilização dos componentes e temas.
+Context API (React): Para gerenciar o estado do tema globalmente na aplicação.
+Vite: (Provavelmente utilizado como) Ferramenta de construção e servidor de desenvolvimento.
+Como Executar
+Clone o repositório:
 
-Currently, two official plugins are available:
+Bash
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+git clone <URL_DO_REPOSITÓRIO>
+cd calculadora-react
+(Substitua <URL_DO_REPOSITÓRIO> pela URL do seu repositório no GitHub)
 
-## Expanding the ESLint configuration
+Instale as dependências:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Bash
+
+npm install
+
+# ou
+
+yarn install
+Inicie o servidor de desenvolvimento:
+
+Bash
+
+npm run dev
+
+# ou
+
+yarn dev
+Isso iniciará a aplicação em um servidor local (geralmente http://localhost:5173/).
+
+Estrutura de Pastas
+calculadora-react/
+├── src/
+│ ├── components/
+│ │ ├── Button.jsx
+│ │ ├── ButtonGroup.jsx
+│ │ ├── Display.jsx
+│ │ ├── History.jsx
+│ │ └── ThemeToggle.jsx
+│ ├── contexts/
+│ │ └── ThemeContext.jsx
+│ ├── styles/
+│ │ ├── App.css (Estilos base - pode ser renomeado para dark.css)
+│ │ ├── ButtonGroup.css
+│ │ ├── Display.css
+│ │ ├── History.css
+│ │ ├── index.css (Estilos globais)
+│ │ └── themes/
+│ │ ├── dark.css (Estilos para o tema escuro)
+│ │ └── light.css (Estilos para o tema claro)
+│ ├── App.jsx (Componente principal da aplicação)
+│ ├── main.jsx (Ponto de entrada da aplicação)
+│ └── ... (outros arquivos)
+├── index.html (Arquivo HTML principal)
+├── package.json (Arquivo de configuração do projeto e dependências)
+├── README.md (Este arquivo)
+└── ... (outros arquivos de configuração)
+Notas
+Este projeto está em desenvolvimento e algumas funcionalidades podem não estar totalmente implementadas ou podem passar por melhorias futuras.
