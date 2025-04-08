@@ -1,0 +1,20 @@
+.theme-toggle-container {
+  position: absolute;
+  top: 10px; /* Ajuste a distância do topo conforme necessário */
+  right: 10px; /* Ajuste a distância da direita conforme necessário */
+}
+
+.theme-toggle-button {
+  padding: 8px 12px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #6c757d; /* Cor de fundo do botão */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle-button:hover {
+  opacity: 0.8;
+}

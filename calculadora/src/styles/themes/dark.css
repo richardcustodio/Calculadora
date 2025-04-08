@@ -1,0 +1,90 @@
+.dark body {
+  font-family: sans-serif;
+  background-color: #1e1e1e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.dark .calculator {
+  background-color: #2d2d2d;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dark .display {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: right;
+  font-size: 2em;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #555;
+}
+
+.dark .button {
+  padding: 15px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dark .button:hover {
+  opacity: 0.8;
+}
+
+.dark .operator {
+  background-color: #fca311;
+  color: white;
+}
+
+.dark .clear {
+  background-color: #d9534f;
+  color: white;
+}
+
+.dark .memory {
+  background-color: #bbb;
+  color: #333;
+}
+
+.dark .copy {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.dark .theme-toggle {
+  background-color: #6c757d;
+  color: white;
+}
+
+.dark .history {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark .history h2 {
+  color: white;
+  border-bottom-color: #555;
+}
+
+.dark .history li {
+  border-bottom-color: #444;
+}

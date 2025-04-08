@@ -1,0 +1,24 @@
+/* src/components/ButtonGroup.css */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.memory {
+  background-color: #bbb; /* Cor cinza clara para botões de memória */
+  color: #333;
+}
+
+.memory:hover {
+  opacity: 0.9;
+}
+
+.copy {
+  background-color: #5cb85c; /* Cor verde para indicar ação de copiar */
+  color: white;
+}
+
+.copy:hover {
+  opacity: 0.9;
+}

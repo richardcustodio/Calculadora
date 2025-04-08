@@ -1,0 +1,32 @@
+/* src/components/Button.css */
+.button {
+  padding: 15px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.operator {
+  background-color: #fca311;
+  color: white;
+}
+
+.clear {
+  background-color: #d9534f;
+  color: white;
+}
+
+.theme-toggle {
+  background-color: #6c757d; /* Um cinza mais escuro */
+  color: white;
+}
+
+.theme-toggle:hover {
+  opacity: 0.9;
+}
