@@ -1,79 +1,50 @@
-Calculadora React
-Este é um projeto de uma calculadora web desenvolvida utilizando a biblioteca React. A calculadora oferece funcionalidades aritméticas básicas, histórico de cálculos e um sistema de temas claro e escuro para personalização da interface.
+## Estrutura de Pastas
 
-Funcionalidades
-Operações Básicas: Realize adições, subtrações, multiplicações e divisões.
-Entrada Decimal: Insira números com casas decimais.
-Histórico: Acompanhe as operações realizadas.
-Funções Extras:
-Porcentagem (%)
-Troca de Sinal (+/-)
-Limpar Tudo (AC)
-Memória (MC, MR, M+, M- - funcionalidade lógica implementada)
-Copiar (Copy) - Copia o valor do display para a área de transferência.
-Raiz Quadrada (√)
-Quadrado (x²)
-Temas: Alterne entre os modos claro e escuro para uma experiência visual confortável em diferentes ambientes. O botão de troca de tema está localizado no canto superior direito da tela.
-Tecnologias Utilizadas
-React: Biblioteca JavaScript para construção de interfaces de usuário.
-CSS: Para a estilização dos componentes e temas.
-Context API (React): Para gerenciar o estado do tema globalmente na aplicação.
-Vite: (Provavelmente utilizado como) Ferramenta de construção e servidor de desenvolvimento.
-Como Executar
-Clone o repositório:
+A seguinte estrutura de pastas organiza os arquivos e diretórios do projeto Calculadora React, facilitando a compreensão e manutenção do código:
 
-Bash
+---
 
-git clone <URL_DO_REPOSITÓRIO>
-cd calculadora-react
-(Substitua <URL_DO_REPOSITÓRIO> pela URL do seu repositório no GitHub)
-
-Instale as dependências:
-
-Bash
-
-npm install
-
-# ou
-
-yarn install
-Inicie o servidor de desenvolvimento:
-
-Bash
-
-npm run dev
-
-# ou
-
-yarn dev
-Isso iniciará a aplicação em um servidor local (geralmente http://localhost:5173/).
-
-Estrutura de Pastas
 calculadora-react/
+
 ├── src/
-│ ├── components/
-│ │ ├── Button.jsx
-│ │ ├── ButtonGroup.jsx
-│ │ ├── Display.jsx
-│ │ ├── History.jsx
-│ │ └── ThemeToggle.jsx
-│ ├── contexts/
-│ │ └── ThemeContext.jsx
-│ ├── styles/
-│ │ ├── App.css (Estilos base - pode ser renomeado para dark.css)
-│ │ ├── ButtonGroup.css
-│ │ ├── Display.css
-│ │ ├── History.css
-│ │ ├── index.css (Estilos globais)
-│ │ └── themes/
-│ │ ├── dark.css (Estilos para o tema escuro)
-│ │ └── light.css (Estilos para o tema claro)
-│ ├── App.jsx (Componente principal da aplicação)
-│ ├── main.jsx (Ponto de entrada da aplicação)
-│ └── ... (outros arquivos)
-├── index.html (Arquivo HTML principal)
-├── package.json (Arquivo de configuração do projeto e dependências)
-├── README.md (Este arquivo)
-└── ... (outros arquivos de configuração)
-Notas
-Este projeto está em desenvolvimento e algumas funcionalidades podem não estar totalmente implementadas ou podem passar por melhorias futuras.
+
+│   ├── components/
+
+│   │   ├── Button.jsx: Componente funcional responsável por renderizar um botão individual da calculadora. Define a aparência e a ação ao ser clicado.
+
+│   │   ├── ButtonGroup.jsx: Componente que agrupa vários componentes Button, organizando-os em linhas e colunas para formar o teclado numérico e de operações da calculadora.
+
+│   │   ├── Display.jsx: Componente responsável por exibir o valor atual inserido pelo usuário e o resultado das operações.
+
+│   │   ├── History.jsx: Componente que exibe o histórico das operações realizadas, permitindo ao usuário acompanhar seus cálculos anteriores.
+
+│   │   └── ThemeToggle.jsx: Componente que implementa o botão de alternância entre os temas claro e escuro da aplicação.
+
+│   ├── contexts/
+│   │   └── ThemeContext.jsx: Define o Context API do React para gerenciar o estado global do tema da aplicação, permitindo que diferentes componentes acessem e alterem o tema atual.
+
+│   ├── styles/
+│   │   ├── App.css: Arquivo de estilos base para o componente principal App. Pode conter estilos gerais ou ser renomeado para dark.css caso se torne o ponto de partida para o tema escuro.
+
+│   │   ├── ButtonGroup.css: Estilos específicos para o componente ButtonGroup, controlando o layout e a aparência dos grupos de botões.
+
+│   │   ├── Display.css: Estilos específicos para o componente Display, definindo a aparência da área de exibição dos números e resultados.
+
+│   │   ├── History.css: Estilos específicos para o componente History, formatando a apresentação do histórico de cálculos.
+
+│   │   ├── index.css: Arquivo de estilos globais que são aplicados a toda a aplicação, como reset de estilos padrão ou definições de fontes.
+
+│   │   └── themes/
+│   │       ├── dark.css: Arquivo contendo os estilos específicos para o tema escuro da calculadora, sobrepondo ou estendendo os estilos base.
+
+│   │       └── light.css: Arquivo contendo os estilos específicos para o tema claro da calculadora, definindo a aparência padrão da interface.
+
+│   ├── App.jsx: Componente funcional que atua como o container principal da aplicação calculadora, gerenciando o estado geral e a renderização dos outros componentes.
+
+│   ├── main.jsx: Ponto de entrada principal da aplicação React. É responsável por renderizar o componente App no elemento raiz do index.html.
+
+│   └── ... (outros arquivos): Outros arquivos que podem incluir utilitários, hooks personalizados ou configurações adicionais.
+├── index.html: Arquivo HTML principal que serve como a estrutura base da página web e o ponto de montagem para a aplicação React.
+├── package.json: Arquivo de configuração do Node.js que contém informações sobre o projeto, scripts de build e as dependências (bibliotecas e pacotes) utilizadas.
+├── README.md: Este arquivo (Markdown) que fornece uma descrição geral do projeto, suas funcionalidades, tecnologias utilizadas e instruções de como executar a aplicação.
+└── ... (outros arquivos de configuração): Outros arquivos de configuração específicos para ferramentas como Vite, ESLint, Prettier, etc.
